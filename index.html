@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahadev Prasad - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #8b1eff, #a344da);
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            padding: 50px;
+            text-align: center;
+            background: rgba(0,0,0,0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 20px;
+            transition: 0.4s;
+        }
+
+        header img:hover {
+            transform: scale(1.06);
+            box-shadow: 0px 0px 20px #fff;
+        }
+
+        section {
+            padding: 50px 10%;
+            animation: fadeSlide 1.5s ease-out;
+        }
+
+        h2 {
+            border-left: 5px solid #fff;
+            padding-left: 12px;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .skills span {
+            display: inline-block;
+            margin: 8px;
+            padding: 10px 18px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            font-size: 16px;
+            transition: .3s;
+        }
+
+        .skills span:hover {
+            background: rgba(255, 255, 255, .4);
+            transform: scale(1.05);
+        }
+
+        .project {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            transition: .3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            background: rgba(0,0,0,0.45);
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .contact-form button {
+            padding: 12px 25px;
+            border: none;
+            background: #fff;
+            color: #333;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .contact-form button:hover {
+            transform: scale(1.05);
+            background: #ddd;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0,0,0,0.3);
+            margin-top: 40px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeSlide {
+            from {opacity: 0; transform: translateY(25px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+
+    <!-- INTRO SECTION -->
+     <header>
+    <img src="myphoto.jpg" alt="Mahadev Prasad S Photo">
+    <h1>Mahadev Prasad</h1>
+    <p>Age: 21</p>
+    <p>Email: <strong>mahadevsprasad22@gamil.com</strong></p>
+    <p>Contact: <strong>8095853074</strong></p>
+</header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate and dedicated learner with strong interest in software development,
+            problem solving, and building real world applications. I enjoy exploring technologies,
+            creating projects that challenge my skills, and continuously improving my craft. My goal
+            is to grow as a professional developer and contribute to meaningful, impactful work.
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>Java</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Smart Attendance System</h3>
+            <p>A face-recognition-based attendance tracker built using Python and OpenCV.</p>
+            <p><b>Tech Used:</b> Python, OpenCV, Machine Learning</p>
+        </div>
+
+        <div class="project">
+            <h3>Library Management Application</h3>
+            <p>A Java desktop application to manage book records, users, and transactions.</p>
+            <p><b>Tech Used:</b> Java, Swing, MySQL</p>
+        </div>
+
+        <div class="project">
+            <h3>Weather Forecast Web App</h3>
+            <p>A responsive website that fetches real-time weather data from an API.</p>
+            <p><b>Tech Used:</b> HTML, CSS, JavaScript, API</p>
+        </div>
+    </section>
+
+    <!-- MESSAGE SECTION -->
+    <section id="message">
+        <h2>Send Me a Message</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message..." rows="5"></textarea>
+            <button>Send Message</button>
+        </div>
+    </section>
+
+    <!-- LINKEDIN SECTION -->
+    <section id="linkedin">
+        <h2>My LinkedIn Profile</h2>
+        <p>
+            <a href="https://www.linkedin.com/in/example-profile-12345" 
+               style="color:#fff; font-size:20px; text-decoration:underline;" 
+               target="_blank">Visit My LinkedIn</a>
+        </p>
+    </section>
+
+    <footer>
+        © 2025 Mahadev Prasad S| Portfolio Website
+    </footer>
+
+</body>
+</html>
